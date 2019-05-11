@@ -18,6 +18,11 @@
 		DBAFF9F8228764610095E4DA /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFF9F7228764610095E4DA /* AppExtension.swift */; };
 		DBAFF9FA228764700095E4DA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFF9F9228764700095E4DA /* Constant.swift */; };
 		DBAFF9FC2287647F0095E4DA /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFF9FB2287647F0095E4DA /* Localization.swift */; };
+		DBAFFA00228766090095E4DA /* PickerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFF9FF228766090095E4DA /* PickerClass.swift */; };
+		DBAFFA02228766320095E4DA /* TextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFFA01228766320095E4DA /* TextBoxView.swift */; };
+		DBAFFA04228766EE0095E4DA /* FeedsControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFFA03228766EE0095E4DA /* FeedsControllerViewController.swift */; };
+		DBAFFA08228767D10095E4DA /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFFA07228767D10095E4DA /* Feed.swift */; };
+		DBAFFA0B2287687A0095E4DA /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFFA0A2287687A0095E4DA /* FeedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		DBAFF9F7228764610095E4DA /* AppExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
 		DBAFF9F9228764700095E4DA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		DBAFF9FB2287647F0095E4DA /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		DBAFF9FF228766090095E4DA /* PickerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerClass.swift; sourceTree = "<group>"; };
+		DBAFFA01228766320095E4DA /* TextBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxView.swift; sourceTree = "<group>"; };
+		DBAFFA03228766EE0095E4DA /* FeedsControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsControllerViewController.swift; sourceTree = "<group>"; };
+		DBAFFA07228767D10095E4DA /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		DBAFFA0A2287687A0095E4DA /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +100,10 @@
 			children = (
 				DBAFF9F1228763B50095E4DA /* APIClient */,
 				DBAFF9F2228763B50095E4DA /* Utils */,
+				DBAFFA06228767D10095E4DA /* Model */,
+				DBAFF9FE228765DC0095E4DA /* View */,
 				DBAFF9FD228764DF0095E4DA /* Controller */,
+				DBAFFA09228768540095E4DA /* CellClass */,
 				DBAFF9DF22875FB70095E4DA /* AppDelegate.swift */,
 				DBAFF9E322875FB70095E4DA /* Main.storyboard */,
 				DBAFF9E622875FB80095E4DA /* Assets.xcassets */,
@@ -123,8 +136,34 @@
 			isa = PBXGroup;
 			children = (
 				DBAFF9E122875FB70095E4DA /* ViewController.swift */,
+				DBAFFA03228766EE0095E4DA /* FeedsControllerViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBAFF9FE228765DC0095E4DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBAFF9FF228766090095E4DA /* PickerClass.swift */,
+				DBAFFA01228766320095E4DA /* TextBoxView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBAFFA06228767D10095E4DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBAFFA07228767D10095E4DA /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBAFFA09228768540095E4DA /* CellClass */ = {
+			isa = PBXGroup;
+			children = (
+				DBAFFA0A2287687A0095E4DA /* FeedCollectionViewCell.swift */,
+			);
+			path = CellClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,13 +292,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAFFA00228766090095E4DA /* PickerClass.swift in Sources */,
 				DBAFF9E222875FB70095E4DA /* ViewController.swift in Sources */,
+				DBAFFA0B2287687A0095E4DA /* FeedCollectionViewCell.swift in Sources */,
 				DBAFF9F6228763F00095E4DA /* APIRouter.swift in Sources */,
 				DBAFF9FC2287647F0095E4DA /* Localization.swift in Sources */,
+				DBAFFA08228767D10095E4DA /* Feed.swift in Sources */,
 				DBAFF9F4228763DF0095E4DA /* BaseApiClient.swift in Sources */,
 				DBAFF9F8228764610095E4DA /* AppExtension.swift in Sources */,
+				DBAFFA04228766EE0095E4DA /* FeedsControllerViewController.swift in Sources */,
 				DBAFF9E022875FB70095E4DA /* AppDelegate.swift in Sources */,
 				DBAFF9FA228764700095E4DA /* Constant.swift in Sources */,
+				DBAFFA02228766320095E4DA /* TextBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
